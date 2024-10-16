@@ -13,9 +13,10 @@ def increments_of_two
     
   end
 end
-increments_of_two
-puts
-puts
+increments_of_two # called the function which will print the results
+
+puts #for line space
+puts #for line space
 =begin
 Exercise 1:
  Define a method count_down that accepts no arguments. It should output the numbers from 10 down to 0. 
@@ -37,7 +38,7 @@ def count_down
   end
 end
 
-count_down
+count_down # called the function directly because print statement is used int he fuction
 
 
 puts
@@ -47,4 +48,4 @@ def even_numbers_up_to_twenty
     print " #{even*2}," 
   end
 end
-even_numbers_up_to_twenty
+even_numbers_up_to_twenty # called the function and it will print the result 
