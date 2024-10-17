@@ -1,19 +1,31 @@
-count=1
+# This function prints "hello" 9 times and then prints the final value of the count variable.
 
-while count < 10 # it will return until count is greater than 10
-  puts "hello"
-  count+=1
-end
-puts count
+def print_hello
+  count = 1 
 
-puts # to add space 
+  while count < 10 
+    puts "hello" 
+    count += 1 
+  end
 
-letter="ab"
-
-while letter.length < 5 # Run until the length of of letter is greater > 5
-  puts letter
-  letter << "c"
+  puts count 
 end
 
-puts letter # shows teh updated letter
+puts " Prinitng hello mutiple times using the while method"
+print_hello
 
+# This function starts with a string "ab", appends "c" to it until its length is 5
+
+def append_letter
+  letter = "ab" 
+
+  while letter.length < 5 
+    puts letter 
+    letter << "c" 
+  end
+
+  puts letter #
+end
+
+puts " Appending caharacter to a string"
+append_letter
