@@ -26,7 +26,7 @@
         puts value
       end
 
-      value=value+1 # it increments t he value and it is checked in above if statements
+      value+=1 # it increments t he value and it is checked in above if statements
       
     end
 
