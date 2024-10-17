@@ -1,32 +1,45 @@
-money_sentence = "I love $ in the morning, $ in the afternoon, and $ at night" 
+# This function finds all occurrences of the '$' sign in the given sentence using a simple while loop.
+# It prints the index of each '$' found in the string.
 
-
-current_index = 0 # because indexing starts from 0
-final_index = money_sentence.length - 1 # becuase index start from 1 that's why 
-
-
-# while current_index <= final_index #run until current is greater the final index
-
-#   if money_sentence [current_index] == "$"
-#     puts "Found $ at index #{current_index}" # will print the inedex where dollar sign is found
-#   end
-
-#   current_index += 1 
-
-# end
-
-# next keyword moves it to the next iteration
-# will solve above thing with next keyword
-
-
-while current_index <= final_index #run until current is greater the final index
-
-  if money_sentence [current_index] != "$"
+def find_dollars_while(money_sentence)
+  current_index = 0 
+  final_index = money_sentence.length - 1 
+  
+  while current_index <= final_index 
+    if money_sentence[current_index] == "$" 
+      puts "Found $ at index #{current_index}" 
+    end
     current_index += 1 
-    next
   end
 
-  puts "Found $ at index #{current_index}" # will print the inedex where dollar sign is found
-  current_index += 1
-
+  # The loop will terminate once all characters have been checked.
 end
+
+
+money_sentence = "I love $ in the morning, $ in the afternoon, and $ at night"
+
+puts "Find Dollar method result using while loop"
+find_dollars_while(money_sentence)
+
+
+# This function finds all the '$' sign in the given sentence using the `next` keyword.
+
+def find_dollars_next(money_sentence)
+  current_index = 0 
+  final_index = money_sentence.length - 1 
+
+  while current_index <= final_index 
+    if money_sentence[current_index] != "$" 
+      current_index += 1 
+      next 
+    end
+
+    puts "Found $ at index #{current_index}" 
+    current_index += 1
+  end
+
+  # The loop will terminate once all characters have been checked.
+end
+
+puts "Find Dollar method result using next keyword"
+find_dollars_next(money_sentence)
