@@ -1,17 +1,22 @@
-money_sentence = "I love $ in the morning, $ in the afternoon, and $ at night" 
+# This function finds the '$' sign in the given sentence.
+# Once it finds the first '$', it prints its index and breaks the loop.
 
+def find_first_dollar(money_sentence)
+  current_index = 0 
+  final_index = money_sentence.length - 1 
 
-current_index = 0 # because indexing starts from 0
-final_index = money_sentence.length - 1 # becuase index start from 1 that's why 
+  while current_index <= final_index 
+    if money_sentence[current_index] == "$"
+      puts "First $ sign found at index #{current_index} and breaking the loop" 
+      break # Break the loop once the first '$' is found
+    end
 
-
-while current_index <= final_index #run until current is greater the final index
-
-  if money_sentence [current_index] == "$"
-    puts "FIrst $ sign found at index #{current_index} and breaking the loop" # will print the inedex where dollar sign is found
-    break # this will break the loop and it will be terminated
+    current_index += 1 
   end
 
-  current_index += 1 
-
+  # If no $ sign is found, the loop will finish without printing anything.
 end
+
+
+money_sentence = "I love $ in the morning, $ in the afternoon, and $ at night"
+find_first_dollar(money_sentence)
