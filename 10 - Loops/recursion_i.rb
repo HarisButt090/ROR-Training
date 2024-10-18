@@ -1,5 +1,5 @@
 #recursion is when a methods call itself within the fuction
-#
+
 def factorial(num)
 
   if num == 0 # these ar ebase condition that if num is equal to these then return 1
