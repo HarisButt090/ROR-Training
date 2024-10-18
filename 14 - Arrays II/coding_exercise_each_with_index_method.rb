@@ -9,14 +9,14 @@
 # product_of_number_and_index([1, 2, 3]) => (0 * 1) + (1 * 2) + (2 * 3) => 8
 # product_of_number_and_index([])        => 0
 
-def product_of_number_and_index(array)
+def product_of_number_and_index(numbers)
   sum=0
-  if array.length == 0
+  if numbers.length == 0
     sum=0
   end
-  array.each_with_index do |value,index|
+  numbers.each_with_index do |num,index|
 
-     sum=sum + (value*index)
+     sum+= (num*index)
     
   end
   return sum
