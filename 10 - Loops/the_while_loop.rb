@@ -24,7 +24,7 @@ def append_letter
     letter << "c" 
   end
 
-  puts letter #
+  puts letter 
 end
 
 puts " Appending caharacter to a string"
