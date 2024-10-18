@@ -7,9 +7,9 @@
 # reverse_all(["forest"])            => ["tserof"]
 # reverse_all([])                    => []
 
-def reverse_all(array)
-  new_array=array.map{ |value| value.reverse}
-  return new_array
+def reverse_all(words)
+  reverse_words=words.map{ |word| word.reverse}
+  return reverse_words
 end
 
 puts 'reverse_all(["cat", "bat", "tub"]) => ["tac", "tab", "but"]'
@@ -18,7 +18,7 @@ puts ' reverse_all(["forest"])            => ["tserof"]'
 p reverse_all(["forest"])
 
 puts 'reverse_all([])                    => []'
-p reverse_all([""])
+p reverse_all([])
 
 
 # Define a words_with_letter method that accepts an array of strings and a letter.
@@ -30,9 +30,9 @@ p reverse_all([""])
 # words_with_letter(["cat", "bat", "tub"], "u") => ["tub"]
 # words_with_letter(["cat", "bat", "tub"], "z") => []
 
-def words_with_letter(array,value)
-  new_array = array.select { |num| num.include?(value)}
-  return new_array
+def words_with_letter(words,value)
+  word_with_letter = words.select { |word| word.include?(value)}
+  return word_with_letter
 end
 
 puts ' words_with_letter(["cat", "bat", "tub"], "a") => ["cat", "bat"]'
@@ -57,9 +57,9 @@ p words_with_letter(["cat", "bat", "tub"], "z")
 # evens_and_odds([2, 4, 6, 8])      => [[2, 4, 6, 8],[]]
 # evens_and_odds([])                => [[], []]
 
-def evens_and_odds(array)
-  new_array = array.partition {|value| value.even?}
-  return new_array
+def evens_and_odds(numbers)
+  partitioned_arrays = numbers.partition {|num| num.even?}
+  return partitioned_arrays
 end
 
 puts ' evens_and_odds([1, 2, 3, 4, 5])   => [[2, 4], [1, 3, 5]]'
