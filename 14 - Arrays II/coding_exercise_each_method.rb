@@ -7,15 +7,15 @@
 # double_elements([1, 2, 3, 4, 5])         => [2, 4, 6, 8, 10]
 # double_elements([10, 20, 30])            => [20, 40, 60]
 
-def double_elements(array)
-  array1=[]
+def double_elements(numbers)
+  double_numbers=[]
 
- for num in array
-   array1.push(num * 2)
+ for num in numbers
+   double_numbers.push(num * 2)
 
  end
 
- return array1 
+ return double_numbers
 end
 
 puts 'double_elements([1, 2, 3, 4, 5])         => [2, 4, 6, 8, 10]'
@@ -34,15 +34,15 @@ puts # to add line break
 # extract_long_words(["spaghetti", "penne", "fettuccine", "ziti"])              #=> ["spaghetti", "fettuccine"]
 # extract_long_words(["lasagna", "ravioli", "cannelloni", "tagliatelle"])       #=> ["cannelloni", "tagliatelle"]
 
-def extract_long_words(array)
-  array1=[]
+def extract_long_words(words)
+  long_words=[]
 
-  for num in array
-    if num.length > 7
-      array1.push(num)
+  for word in words
+    if word.length > 7
+      long_words.push(word)
     end
   end
- return array1
+ return long_words
 end
 
 puts ' extract_long_words(["spaghetti", "penne", "fettuccine", "ziti"])              #=> ["spaghetti", "fettuccine"]'
@@ -63,17 +63,17 @@ p extract_long_words(["lasagna", "ravioli", "cannelloni", "tagliatelle"])
 # pastas_and_sauces(["fettucine", "spaghetti", "penne"], ["alfredo", "bolognese", "pesto"])    => 
 # ["Fettucine with Alfredo sauce", "Fettucine with Bolognese sauce", "Fettucine with Pesto sauce", "Spaghetti with Alfredo sauce", "Spaghetti with Bolognese sauce", "Spaghetti with Pesto sauce", "Penne with Alfredo sauce", "Penne with Bolognese sauce", "Penne with Pesto sauce"]
 
-def pastas_and_sauces(array1,array2)
-  new_array= []
+def pastas_and_sauces(pastas,sauces)
+  combination = []
   
-  for value1 in array1
-    for value2 in array2
-      new_array.push("#{value1.capitalize} with #{value2.capitalize} sauce")
+  for pasta in pastas
+    for sauce in sauces
+      combination.push("#{pasta.capitalize} with #{sauce.capitalize} sauce")
       
     end
   end
 
-  return new_array
+  return combination
  
 end
 
