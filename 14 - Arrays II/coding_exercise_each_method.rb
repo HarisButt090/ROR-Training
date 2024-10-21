@@ -63,10 +63,10 @@ p extract_long_words(["lasagna", "ravioli", "cannelloni", "tagliatelle"])
 # pastas_and_sauces(["fettucine", "spaghetti", "penne"], ["alfredo", "bolognese", "pesto"])    => 
 # ["Fettucine with Alfredo sauce", "Fettucine with Bolognese sauce", "Fettucine with Pesto sauce", "Spaghetti with Alfredo sauce", "Spaghetti with Bolognese sauce", "Spaghetti with Pesto sauce", "Penne with Alfredo sauce", "Penne with Bolognese sauce", "Penne with Pesto sauce"]
 
-def pastas_and_sauces(pastas,sauces)
+def pastas_and_sauces(type_of_pastas,sauces)
   combination = []
   
-  for pasta in pastas
+  for pasta in type_of_pastas
     for sauce in sauces
       combination.push("#{pasta.capitalize} with #{sauce.capitalize} sauce")
       
