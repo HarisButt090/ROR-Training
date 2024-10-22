@@ -12,18 +12,17 @@
 # custom_delete("cottage cheese", "ec")    => "ottag hs"
 
 def custom_delete(text, value)
-  final_string=""
-  text.each_char do |char|
-
-    if !value.include?(char)
-      
-      final_string<<char
-      
-    end
-      
-    end
-return final_string
+   final_string=""
   
+  text.each_char do |char|
+    
+     if !value.include?(char)
+          final_string<<char
+     end 
+    
+  end
+  
+    return final_string
 end
 
 p custom_delete("cottage cheese", "c")     => "ottage heese"
