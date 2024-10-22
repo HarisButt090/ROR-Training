@@ -16,25 +16,18 @@
 # custom_max([])                               => nil
 
 def custom_max(array)
-  
-  return nil if array.nil?
-  max=array[0]
+  return nil if array.empty? 
 
-  start_index=0
-  final_index= array.length - 1
+  max = array[0] 
 
-   while start_index <=  final_index
-
-    if max < array[start_index]
-      max = array[start_index]
+  array.each do |element| 
+  if max < element
+     max = element
+  end
     
-    end
-
-    start_index+=1
-   end
-
-    
+  end
   return max
+
 end
 
 puts 'custom_max([434.12, 723.99, 84.12, 649.92])  => 723.99'
@@ -48,4 +41,3 @@ p custom_max(["Tree", "Elm", "Zebra"])
 
 puts 'custom_max([])                               => nil'
 p custom_max([])                               
-
