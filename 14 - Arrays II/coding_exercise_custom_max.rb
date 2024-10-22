@@ -17,17 +17,13 @@
 
 def custom_max(array)
   return nil if array.empty? 
-
   max = array[0] 
 
   array.each do |element| 
-  if max < element
-     max = element
+    max = element if max < element
   end
-    
-  end
+  
   return max
-
 end
 
 puts 'custom_max([434.12, 723.99, 84.12, 649.92])  => 723.99'
