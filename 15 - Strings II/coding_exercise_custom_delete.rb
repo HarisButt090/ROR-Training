@@ -16,10 +16,8 @@ def custom_delete(text, value)
   
   text.each_char do |char|
     
-     if !value.include?(char)
-          final_string<<char
-     end 
-    
+    final_string<<char if !value.include?(char)
+ 
   end
   
     return final_string
