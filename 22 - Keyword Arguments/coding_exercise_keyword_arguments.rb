@@ -54,7 +54,7 @@ class Restaurant
 
 end
 
-LaCasa = Restaurant.new(
+la_casa = Restaurant.new(
   name: "La Casa",
   address: "123 Flavortown Street, NJ",
   cuisine: "Patriotic American",
@@ -63,16 +63,16 @@ LaCasa = Restaurant.new(
   menu: { wings: 14.99 }
 )
 
-p LaCasa.address
-p LaCasa.name
+p la_casa.address
+p la_casa.name
 
 
-HellKitchen = Restaurant.new(
+hell_kitchen = Restaurant.new(
   name: "Hell's Kitchen",
   address: "345 Las Vegas Boulevard, NV",
   cuisine: "British",
 )
 
-p HellKitchen.head_chef # ""
-p HellKitchen.rating    # 3
-p HellKitchen.menu      # {}
+p hell_kitchen.head_chef # ""
+p hell_kitchen.rating    # 3
+p hell_kitchen.menu      # {}
