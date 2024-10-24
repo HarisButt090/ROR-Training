@@ -14,7 +14,7 @@ class Project
   def initialize
     @name="Q4 Tech updates"
     @budget=100000
-    @team_members=%W[Piers, Rob, Jon]
+    @team_members=%W[Piers Rob Jon]
   end
  
   def name
