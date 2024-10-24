@@ -18,8 +18,8 @@ def add_thirty_days(dates)
   result=[]
 
   dates.each do |element|
-    date = Time.strptime(element,"%m**%d**%Y")
-    additional_date = date + (60*60*24*30)
+    date = Date.strptime(element,"%m**%d**%Y")
+    additional_date = date + 30
     new_date= additional_date.strftime("%m**%d**%Y")
     result << new_date
   
