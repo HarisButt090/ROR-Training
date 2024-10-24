@@ -1,3 +1,4 @@
+
 # Define a reverse_all method that accepts an array of strings.
 # The method should return an array with all the strings in reversed order.
 #
@@ -71,3 +72,4 @@ p evens_and_odds([2, 4, 6,8])
 
 puts ' evens_and_odds([])                => [[], []]'
 p evens_and_odds([])
+

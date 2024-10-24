@@ -1,3 +1,4 @@
+
 # Define a product_of_number_and_index method that accepts an array of numbers. 
 # The method should iterate over the elements. For each element,
 # it should multiply the element by its index position. It should
@@ -26,3 +27,4 @@ puts ' product_of_number_and_index([1, 2, 3]) => (0 * 1) + (1 * 2) + (2 * 3) => 
 puts product_of_number_and_index([1,2,3])
 puts '# product_of_number_and_index([])        => 0'
 puts product_of_number_and_index([0])
+
