@@ -4,13 +4,13 @@
 # to whatever values you'd like.
 # 
 class Musical
-  def initialize
-    @name="Haris"
-    @cast="Sufi"
-    @duration="15 min"
+  def initialize(name,cast,duration)
+    @name=name
+    @cast=cast
+    @duration=duration
   end
 end
 
-music=Musical.new
+music=Musical.new("Haris","Sufi","120min")
 puts "Initialized the instance variables"
 puts music
