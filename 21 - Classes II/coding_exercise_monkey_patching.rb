@@ -7,7 +7,17 @@
 # my_array = [1, 2, 2, 3]
 # my_array.more_than_once?(2)    #=> true
 # my_array.more_than_once?(3)    #=> false
-#
+
+class Array
+  def more_than_once?(element)
+    self.count(element) > 1
+  end
+end
+
+my_array = [1, 2, 2, 3]
+p my_array.more_than_once?(2)   #=> true
+p my_array.more_than_once?(3)   #=> false
+
 #
 # Monkey-patch the Hash class to add a common_keys_and_values method
 # The method should return an array consisting of the elements
@@ -23,17 +33,6 @@ class Hash
     self.keys & self.values   # Here I used & for intersection 
   end
 end
-
-
-class Array
-  def more_than_once?(element)
-    self.count(element) > 1
-  end
-end
-
-my_array = [1, 2, 2, 3]
-p my_array.more_than_once?(2)   #=> true
-p my_array.more_than_once?(3)   #=> false
 
 my_hash = { a: "hello", b: "goodbye", "goodbye" => 5 }
 p my_hash.common_keys_and_values  #=> ["goodbye"]
