@@ -1,4 +1,5 @@
 
+
 # Define a word_frequency method that accepts a piece of text.
 # Return a hash with a count of the number of times each word
 # appears within the text. The hash keys should be the words
@@ -37,3 +38,4 @@ p word_frequency("a land far far away")
 
 puts ' word_frequency("")                     => {}'
 p word_frequency("")                     
+
