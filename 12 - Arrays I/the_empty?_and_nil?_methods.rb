@@ -5,4 +5,4 @@ names=%W[Haris Hamza Huzaifa Hadi]
 puts names.empty?
 
 puts names.nil?
-puts [].nil?
+puts  [].nil?

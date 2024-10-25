@@ -1,5 +1,6 @@
 
 
+
 # Define a word_frequency method that accepts a piece of text.
 # Return a hash with a count of the number of times each word
 # appears within the text. The hash keys should be the words

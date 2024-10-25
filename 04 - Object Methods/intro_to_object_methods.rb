@@ -3,3 +3,4 @@ puts "hello wolrd ".upcase
 puts "HRAIS NAseem ".downcase
 name="haris NAseem butt"
 puts name.downcase
+puts name.swapcase
